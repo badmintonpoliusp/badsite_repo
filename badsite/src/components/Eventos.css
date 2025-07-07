@@ -1,16 +1,35 @@
-/* Estilo para remover a borda e controlar as barras de rolagem do iframe */
-.google-calendar-iframe {
-    border: none; /* Remove a borda do iframe */
-    overflow: hidden; /* Remove as barras de rolagem (equivalente a scrolling="no") */
-    /* Você também pode usar:
-       overflow-x: hidden; para barra de rolagem horizontal
-       overflow-y: hidden; para barra de rolagem vertical
-       overflow: auto; para barras de rolagem aparecerem apenas se necessário
-       overflow: scroll; para barras de rolagem aparecerem sempre
-    */
+.eventos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
 }
 
-/* Opcional: Para tornar o iframe responsivo */
+.calendar-and-text{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;       
+    padding: 0 15px; 
+    /* para dispositivos pequenos */
+    box-sizing: border-box;  
+}
+
+.notice{
+    width: 100%;
+    text-align: justify;
+    padding: 20px 0;
+
+}
+
+.google-calendar-iframe {
+    border: none; 
+    overflow: hidden; /* Remove as barras de rolagem (equivalente a scrolling="no") */
+    height: 600px;
+    width: 800px;
+    max-width: 100%; /* Torna o iframe responsivo */
+    margin: 0 auto; /* Centraliza o iframe horizontalmente */
+}
+
 .responsive-iframe-container {
     position: relative;
     width: 100%;
@@ -25,4 +44,20 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Media Query para Ajustes Fino em Telas Menores */
+@media (max-width: 820px) { /* Ajuste o breakpoint conforme a necessidade */
+    .calendar-and-text-wrapper {
+        max-width: 100%; /* Permite que o wrapper ocupe 100% da largura em telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar-description-text {
+        font-size: 0.95em; /* Reduz um pouco o tamanho da fonte em telas menores */
+    }
+    .responsive-iframe-container {
+        padding-bottom: 90%; /* Ajuste a proporção para telas muito pequenas se desejar */
+    }
 }

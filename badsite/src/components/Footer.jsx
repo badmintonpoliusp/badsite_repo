@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
   return (<>
     <div className="container">
-        {/* <div className="block">
+        <div className="block">
             <p className = "title_bar_footer">Navegação</p>
             <ul>
                 <li>Home</li>
@@ -14,7 +14,7 @@ function Footer() {
                 <li>Hall da Fama</li>
                 <li>Sobre</li>
             </ul>
-        </div> */}
+        </div>
 
         <div className="block">
             <p className = "title_bar_footer">Parceria</p>
@@ -34,13 +34,13 @@ function Footer() {
             </ul>
         </div>
 
-        <div className="block">
+        {/* <div className="block">
             <p className = "title_bar_footer">Mídias Sociais</p>
             <ul>
                 <li>Instagram</li>
                 <li>Facebook</li>
             </ul>
-        </div>
+        </div> */}
 
         <div className="block">
             <div>
