@@ -1,0 +1,28 @@
+/* Estilo para remover a borda e controlar as barras de rolagem do iframe */
+.google-calendar-iframe {
+    border: none; /* Remove a borda do iframe */
+    overflow: hidden; /* Remove as barras de rolagem (equivalente a scrolling="no") */
+    /* Você também pode usar:
+       overflow-x: hidden; para barra de rolagem horizontal
+       overflow-y: hidden; para barra de rolagem vertical
+       overflow: auto; para barras de rolagem aparecerem apenas se necessário
+       overflow: scroll; para barras de rolagem aparecerem sempre
+    */
+}
+
+/* Opcional: Para tornar o iframe responsivo */
+.responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Proporção 4:3 (altura / largura * 100). Para 16:9 seria 56.25% */
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
