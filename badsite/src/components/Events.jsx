@@ -1,6 +1,7 @@
 import React from 'react';
 import Page_title from './Page_title'; 
-import './Eventos.css'
+import './Events.css'
+
 
 function Eventos() {
     return (
