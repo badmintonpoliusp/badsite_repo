@@ -4,44 +4,67 @@ function Footer() {
   return (<>
     <div>
         <p class = "title_bar_footer">Navegação</p>
-        <ul>Home</ul>
-        <ul>Eventos</ul>
-        <ul>Blog</ul>
-        <ul>Galeria</ul>
-        <ul>Hall da Fama</ul>
-        <ul>Sobre</ul>
+
+        <ul>
+            <li>Home</li>
+            <li>Eventos</li>
+            <li>Blog</li>
+            <li>Galeria</li>
+            <li>Hall da Fama</li>
+            <li>Sobre</li>
+        </ul>
+
     </div>
 
     <div>
         <p class = "title_bar_footer">Parceria</p>
-        <ul>Patrocínios</ul>
-        <ul>Contribuições</ul>
-        <ul>Lei de Incentivo</ul>
+
+        <ul>
+           <li>Patrocínios</li>
+            <li>Contribuições</li>
+            <li>Lei de Incentivo</li> 
+        </ul>
+    
     </div>
 
     <div>
         <p class = "title_bar_footer">Links úteis</p>
-        <ul>A.A.A.P.</ul>
-        <ul>CEPEUSP</ul>
-        <ul>FEBASP</ul>
+
+        <ul>
+            <li>A.A.A.P.</li>
+            <li>CEPEUSP</li>
+            <li>FEBASP</li>
+        </ul>
+        
     </div>
 
     <div>
         <p class = "title_bar_footer">Mídias Sociais</p>
-        <ul>Instagram</ul>
-        <ul>Facebook</ul>
+        
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ul>
+        
     </div>
 
     <div>
         <p class = "title_bar_footer">Treino e Horário</p>
-        <ul>Sexta: 17h às 21h</ul>
-        <ul>Módulo 6 - CEPEUSP</ul>
+
+        <ul>
+           <li>Sexta: 17h às 21h</li>
+            <li>Módlio 6 - CEPEUSP</li> 
+        </ul>
+        
     </div>
 
     <div>
         <p class = "title_bar_footer">Contato</p>
-        <ul>Sexta: 17h às 21h</ul>
-        <ul>Módulo 6 - CEPEUSP</ul>
+
+        <ul>
+        <li>bad.poliusp@gmail.com</li>
+        </ul>
+
     </div>
   </>);
 }
