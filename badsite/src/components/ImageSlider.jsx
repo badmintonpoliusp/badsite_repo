@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './ImageSlider.css';
-import Page_title from './Page_title';
 
 
 // Import slick-carousel CSS files
@@ -31,7 +30,6 @@ const ImageSlider = () => {
 
   return (
     <div className="slider">
-      <Page_title title="Galeria"/>
       <div className="slider-container">
         <Slider {...settings}>
           {images.map((imageSrc, index) => (

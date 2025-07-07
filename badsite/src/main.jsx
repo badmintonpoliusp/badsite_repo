@@ -1,38 +1,71 @@
+// src/main.jsx
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Keep this import
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// Componentes
-import Header from './components/Header';
-import ImageSlider from './components/ImageSlider';
-import Footer from './components/Footer';
-// You'll also need to import your other page components like Home, Eventos, Blog, etc.
-// For example:
-// import Home from './pages/Home';
-// import Eventos from './pages/Eventos';
-// import Blog from './pages/Blog';
-// import Galeria from './pages/Galeria';
-// import Equipe from './pages/Equipe';
-// import Sobre from './pages/Sobre';
+// 1. Import your global stylesheet
+import './index.css';
 
+// 2. Import your main layout component
+import AppLayout from './AppLayout'; 
 
+// 3. Import all of your page components
+import HomePage from './pages/HomePage';
+import Events from './pages/Events';
+import BlogIndexPage from './pages/BlogIndexPage';
+import BlogPostPage from './pages/BlogPostPage';
+import TeamPage from './pages/TeamPage';
+import MarcoZero from './pages/MarcoZero';
+import Gallery from './pages/Gallery';
+// You can create placeholder files for these pages for now
+// import GaleriaPage from './pages/GaleriaPage'; 
+// import SobrePage from './pages/SobrePage';
+
+// 4. Define your website's routes
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <AppLayout />, // This layout (Header/Footer) wraps all pages
+    children: [
+      {
+        index: true, // The default page at '/'
+        element: <HomePage />,
+      },
+      {
+        path: 'eventos',
+        element: <Events />,
+      },
+      {
+        path: 'blog',
+        element: <BlogIndexPage />, // The list of blog posts
+      },
+      {
+        path: 'blog/:postId', // The dynamic route for a single post
+        element: <BlogPostPage />,
+      },
+      {
+        path: 'hall-da-fama',
+        element: <TeamPage />,
+      },
+      // --- Example placeholders for future pages ---
+      {
+        path: 'galeria',
+        // Replace this with <GaleriaPage /> when you create it
+        element: <Gallery/>, 
+      },
+      {
+        path: 'sobre',
+        // Replace this with <SobrePage /> when you create it
+        element: <MarcoZero />,
+      },
+    ],
+  },
+]);
+
+// 5. Render your application with the router
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter> {/* <--- HERE IS THE BrowserRouter */}
-      <Header /> {/* Header is now inside BrowserRouter */}
-      <main>
-        {/* Define your routes here */}
-        <Routes>
-          <Route path="/" element={<p>This is the Home Page (You'll replace this with your actual Home component)</p>} />
-          {/* Example routes for your other pages. Make sure to create these components */}
-          {/* <Route path="/eventos" element={<Eventos />} /> */}
-          {/* <Route path="/blog" element={<Blog />} /> */}
-          {/* <Route path="/galeria" element={<ImageSlider />} /> // Using your ImageSlider as an example page */}
-          {/* <Route path="/equipe" element={<Equipe />} /> */}
-          {/* <Route path="/sobre" element={<Sobre />} /> */}
-        </Routes>
-      </main>
-      <Footer /> {/* Footer can also be here if it's always present */}
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

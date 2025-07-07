@@ -1,0 +1,18 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* It's also a good idea to set a default font here */
+}
+
+/* This targets the root div where your React app is mounted */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tell the main content area to grow and fill all available space */
+.main-content {
+  flex-grow: 1;
+}
