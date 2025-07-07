@@ -1,8 +1,7 @@
 /* src/components/Header.css */
 
-/* ... (Todo o seu CSS que já escrevemos antes vai aqui) ... */
 .app-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
