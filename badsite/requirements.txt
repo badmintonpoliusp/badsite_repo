@@ -1,0 +1,24 @@
+Project Setup Instructions
+==========================
+
+1. Clean Installation (If Necessary)
+------------------------------------
+If you already have a node_modules folder, run these commands first to ensure a clean start.
+
+rd /s /q "node_modules"
+del package-lock.json
+
+
+2. Install Dependencies
+-----------------------
+Next, install all the necessary packages for the project.
+
+npm install
+npm install react-router-dom react-icons react-slick slick-carousel
+
+
+3. Run the Project
+------------------
+Finally, start the development server.
+
+npm run dev
