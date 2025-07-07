@@ -1,0 +1,72 @@
+/* Estilos para a página de índice do blog */
+.blog-index-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Seção de introdução do post principal */
+.main-post-intro {
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.main-post-intro h1 {
+  font-size: 2.8rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+.intro-quote {
+  font-size: 1.2rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 20px;
+  border: none;
+  padding: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Lista de outros posts */
+.post-list {
+  margin-top: 40px;
+}
+
+.post-list h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.post-link-item a {
+  display: block;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-link-item a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.post-link-item h3 {
+  margin: 0 0 5px 0;
+  color: #0a2342;
+  font-size: 1.3rem;
+}
+
+.post-link-item span {
+  font-size: 0.9rem;
+  color: #888;
+}

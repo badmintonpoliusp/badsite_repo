@@ -1,41 +1,37 @@
-// src/components/Header.jsx
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/images/icon.jpg';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Importando ícones de hamburger e de fechar
+// --- THIS IS THE FIX ---
+// This path goes "up" one level from /components, then "down" into /assets/images
+import logo from '../assets/images/icon.jpg'; 
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
-  // Estado para controlar se o menu está aberto ou fechado
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Função para alternar o estado do menu
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header className="app-header">
       <div className="logo-container">
-        <img src={logo} alt="Logo Badminton Poli-Usp" className="logo" />
+        <Link to="/" onClick={closeMenu}>
+          {/* The `src` attribute now uses the imported `logo` variable */}
+          <img src={logo} alt="Logo Badminton Poli-Usp" className="logo" />
+        </Link>
         <span className="logo-text">Badminton Poli-Usp</span>
       </div>
 
-      {/* Ícone do menu (só aparece em mobile) */}
-      <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? <FaTimes /> : <FaBars />} // renderiza FaTimes(X) quando o menu está aberto, caso contrário renderiza FaBars(☰)
+      <div className="menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {isMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
-
-      {/* Aplicamos uma classe 'active' quando o menu está aberto */}
       
       <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <ul>
-          <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-          <li><a href="#eventos" onClick={() => setIsMenuOpen(false)}>Eventos</a></li>
-          <li><a href="#blog" onClick={() => setIsMenuOpen(false)}>Blog</a></li>
-          <li><a href="#galeria" onClick={() => setIsMenuOpen(false)}>Galeria</a></li>
-          <li><a href="#hall-da-fama" onClick={() => setIsMenuOpen(false)}>Hall da Fama</a></li>
-          <li><a href="#sobre" onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/eventos" onClick={closeMenu}>Eventos</Link></li>
+          <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
+          <li><Link to="/galeria" onClick={closeMenu}>Galeria</Link></li>
+          <li><Link to="/equipe" onClick={closeMenu}>Hall da Fama</Link></li>
+          <li><Link to="/sobre" onClick={closeMenu}>Sobre</Link></li>
         </ul>
       </nav>
     </header>
