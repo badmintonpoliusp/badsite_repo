@@ -21,7 +21,7 @@ const Header = () => {
         <span className="logo-text">Badminton Poli-Usp</span>
       </div>
 
-      {/* Ícone do menu hamburger (só aparece em mobile) */}
+      {/* Ícone do menu (só aparece em mobile) */}
       <div className="menu-icon" onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
