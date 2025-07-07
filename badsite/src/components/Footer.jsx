@@ -2,9 +2,9 @@ import './Footer.css'
 
 function Footer() {
   return (<>
-    <div class="container">
-        <div class="block">
-            <p class = "title_bar_footer">Navegação</p>
+    <div className="container">
+        {/* <div className="block">
+            <p className = "title_bar_footer">Navegação</p>
             <ul>
                 <li>Home</li>
                 <li>Eventos</li>
@@ -13,10 +13,10 @@ function Footer() {
                 <li>Hall da Fama</li>
                 <li>Sobre</li>
             </ul>
-        </div>
+        </div> */}
 
-        <div class="block">
-            <p class = "title_bar_footer">Parceria</p>
+        <div className="block">
+            <p className = "title_bar_footer">Parceria</p>
             <ul>
                 <li>Patrocínios</li>
                 <li>Contribuições</li>
@@ -24,8 +24,8 @@ function Footer() {
             </ul>
         </div>
 
-        <div class="block">
-            <p class = "title_bar_footer">Links úteis</p>
+        <div className="block">
+            <p className = "title_bar_footer">Links úteis</p>
             <ul>
                 <li>A.A.A.P.</li>
                 <li>CEPEUSP</li>
@@ -33,17 +33,17 @@ function Footer() {
             </ul>
         </div>
 
-        <div class="block">
-            <p class = "title_bar_footer">Mídias Sociais</p>
+        <div className="block">
+            <p className = "title_bar_footer">Mídias Sociais</p>
             <ul>
                 <li>Instagram</li>
                 <li>Facebook</li>
             </ul>
         </div>
 
-        <div class="block">
+        <div className="block">
             <div>
-                <p class = "title_bar_footer">Treino e Horário</p>
+                <p className = "title_bar_footer">Treino e Horário</p>
                 <ul>
                 <li>Sexta: 17h às 21h</li>
                     <li>Módlio 6 - CEPEUSP</li> 
@@ -51,7 +51,7 @@ function Footer() {
             </div>
 
             <div id="contact_block">
-                <p class = "title_bar_footer">Contato</p>
+                <p className = "title_bar_footer">Contato</p>
                 <ul>
                     <li>bad.poliusp@gmail.com</li>
                 </ul>

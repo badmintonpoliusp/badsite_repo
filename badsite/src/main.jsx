@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header />
+    {/* <Header /> */}
     <Footer />
   </React.StrictMode>
 );

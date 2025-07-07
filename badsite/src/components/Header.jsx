@@ -23,10 +23,11 @@ const Header = () => {
 
       {/* Ícone do menu (só aparece em mobile) */}
       <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? <FaTimes /> : <FaBars />}
+        {isMenuOpen ? <FaTimes /> : <FaBars />} // renderiza FaTimes(X) quando o menu está aberto, caso contrário renderiza FaBars(☰)
       </div>
 
       {/* Aplicamos uma classe 'active' quando o menu está aberto */}
+      
       <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <ul>
           <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
