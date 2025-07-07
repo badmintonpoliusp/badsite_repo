@@ -1,0 +1,131 @@
+/* src/components/Header.css */
+
+/* ... (Todo o seu CSS que já escrevemos antes vai aqui) ... */
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #011d42;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 80px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Escondemos a lista de links e o ul por padrão */
+.nav-links {
+  display: flex; /* Mudamos para flex para melhor alinhamento */
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.nav-links a:hover {
+  color: #f1c40f;
+}
+
+/* Ícone do menu: escondido no desktop por padrão */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+/* --- ESTILOS RESPONSIVOS (A MÁGICA ACONTECE AQUI) --- */
+@media (max-width: 768px) {
+  
+  /* Ajusta o padding do header em telas menores */
+  .app-header {
+    padding: 0 20px;
+  }
+  
+  /* Ajusta o texto da logo */
+  .logo-text {
+    font-size: 1.2em;
+  }
+
+  /* Esconde os links no formato desktop */
+  .nav-links {
+    display: none; /* Escondemos por padrão */
+    position: absolute;
+    top: 80px; /* Altura do header */
+    left: 0;
+    width: 100%;
+    background-color: #0a2342; /* Mesmo fundo do header */
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  /* Mostra o menu quando a classe 'active' está presente */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Ajusta a lista de links para o formato vertical */
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-links li {
+    margin: 15px 0; /* Espaçamento vertical */
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1.2em;
+  }
+
+  /* Mostra o ícone do menu no mobile */
+  .menu-icon {
+    display: block;
+  }
+}
