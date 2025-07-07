@@ -1,0 +1,30 @@
+.slider-container {
+  width: 80%; /* Or any width you prefer */
+  max-width: 900px;
+  margin: 40px auto; /* Center the slider on the page */
+  background-color: #f0f0f0; /* A light grey background like the image */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.slider-image {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Optional: prevent very tall images from taking too much space */
+  object-fit: contain; /* This is important! */
+}
+
+/* Optional: Style the dots */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #0a2342;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f1c40f;
+}
+
+.slider {
+  padding-bottom: 5%;
+}
