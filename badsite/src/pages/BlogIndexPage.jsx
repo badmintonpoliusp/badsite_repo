@@ -1,8 +1,12 @@
 // src/pages/BlogIndexPage.jsx
 
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { blogData } from '../data/blogData';
+
+import Page_title from '../components/Page_title'; 
+
 import './BlogIndexPage.css';
 
 const BlogIndexPage = () => {
@@ -11,11 +15,14 @@ const BlogIndexPage = () => {
   return (
     <div className="blog-index-page">
       <section className="main-post-intro">
-        <h1>{mainPost.title}</h1>
+        
+        <Page_title title = {mainPost.title} />
+
         <blockquote className="intro-quote">
           “{mainPost.introQuote}”
         </blockquote>
       </section>
+
       <section className="post-list">
         <h2>Todas as Histórias</h2>
         {blogData.map(post => (

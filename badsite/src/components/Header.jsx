@@ -1,9 +1,13 @@
 // src/components/Header.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // <-- Import Link
-import './Header.css';
-import logo from '../assets/images/icon.jpg';
 import { FaBars, FaTimes } from 'react-icons/fa';
+
+import './Header.css';
+
+import logo from '../assets/images/icon.jpg';
+
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

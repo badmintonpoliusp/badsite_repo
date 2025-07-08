@@ -12,12 +12,13 @@ import AppLayout from './AppLayout';
 
 // 3. Import all of your page components
 import HomePage from './pages/HomePage';
-import Events from './pages/Events';
+import EventsPage from './pages/EventsPage';
 import BlogIndexPage from './pages/BlogIndexPage';
 import BlogPostPage from './pages/BlogPostPage';
-import TeamPage from './pages/TeamPage';
 import MarcoZero from './pages/MarcoZero';
-import Gallery from './pages/Gallery';
+import GalleryPage from './pages/GalleryPage';
+import AboutPage from './pages/AboutPage';
+import HallPage from './pages/HallPage';
 // You can create placeholder files for these pages for now
 // import GaleriaPage from './pages/GaleriaPage'; 
 // import SobrePage from './pages/SobrePage';
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'eventos',
-        element: <Events />,
+        element: <EventsPage />,
       },
       {
         path: 'blog',
@@ -46,16 +47,21 @@ const router = createBrowserRouter([
       },
       {
         path: 'hall-da-fama',
-        element: <TeamPage />,
+        element: <HallPage/>,
       },
       // --- Example placeholders for future pages ---
       {
         path: 'galeria',
         // Replace this with <GaleriaPage /> when you create it
-        element: <Gallery/>, 
+        element: <GalleryPage/>, 
       },
       {
         path: 'sobre',
+        // Replace this with <SobrePage /> when you create it
+        element: <AboutPage/>,
+      },
+      {
+        path: 'projeto-marco-zero',
         // Replace this with <SobrePage /> when you create it
         element: <MarcoZero />,
       },

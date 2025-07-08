@@ -1,46 +1,86 @@
-.MZ_container {
-    width: 100%;
+.MZ-container {
+    max-width: 80%;
+    margin: 0 5%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 20% 5% 20%;
+    flex-wrap: wrap;
+    justify-content:center;
     box-sizing: border-box;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
-.Logo {
+.MZ-logo {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 50%;
-    padding-right: 20px;
+    flex: 0 1 45%;
 }
 
-.Logo img {
+.MZ-logo img {
     max-width: 100%;
-    height: auto;
     display: block;
 }
 
-.description {
+.MZ-description {
     display: flex;
-    justify-content: flex-start;
+    flex: 0 1 45%;
+    justify-content: center;
     align-items: center;
-    width: 50%;
-    padding-left: 20px;
-    font-size: 1.1em;
     line-height: 1.6;
     color: #333;
 }
 
-.description p {
+.MZ-description p {
+    text-indent: 3mm;
     text-align: justify;
     margin: 0;
 }
 
+.members-container {
+    max-width: 80%;
+    margin: 0 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
+.member-card {
+    flex: 0 1 calc(26.666% - 40px*2/3); /* flex: grow, shrink, basis */
+    box-sizing: border-box;
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .MZ-container {
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10%;
+    }
+/* 
+    .Mz-description {
+        padding: 0 5%;
+    } */
+
+    .MZ-description p {
+        padding: 0 5%;
+        text-indent: 3mm;
+        text-align: justify; 
+    }
+}
+
+
+/* 
 @media (max-width: 768px) {
     .MZ_container {
         flex-direction: column;
@@ -66,6 +106,7 @@
     }
 }
 
+
 @media (max-width: 480px) {
     .MZ_container {
         padding: 15px 3% 5% 3%;
@@ -77,4 +118,4 @@
     .description p {
         text-align: justify; 
     }
-}
+} */

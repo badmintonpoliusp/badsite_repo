@@ -6,7 +6,8 @@ import membersData from '../data/members';
 import Page_title from '../components/Page_title';
 
 const TeamPage = () => {
-  // Ordena os membros em ordem alfabética primeiro
+  // Ordena os membros em ordem alfabética primeiro 
+  // [....membersData] cria uma cópia do array original e armazena no sortedMembers
   const sortedMembers = [...membersData].sort((a, b) => 
     a.name.localeCompare(b.name)
   );
@@ -55,6 +56,8 @@ const TeamPage = () => {
         {/* As linhas de baixo são renderizadas em um único container que fará a quebra de linha automaticamente */}
         {bottomRowMembers.length > 0 && (
           <div className="team-row">
+
+
             {bottomRowMembers.map((member) => (
               <div className="member-card" key={member.id}>
                 <img src={member.imageUrl} alt={`Foto de ${member.name}`} className="member-photo" />
@@ -62,6 +65,8 @@ const TeamPage = () => {
                 <p className="member-description">{member.description}</p>
               </div>
             ))}
+
+            
           </div>
         )}
 

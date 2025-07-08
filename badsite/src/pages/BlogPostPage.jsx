@@ -26,19 +26,24 @@ const BlogPostPage = () => {
   // The rest of your component is great.
   return (
     <article className="blog-post-page">
+
       <header className="post-header">
         <h1>{post.title}</h1>
         <p className="post-meta">{post.date}</p>
       </header>
+
       <div 
         className="post-content" 
         dangerouslySetInnerHTML={{ __html: post.content }} 
       />
+
       {post.authorImage && (
+
         <footer className="post-footer">
           <img src={post.authorImage} alt={post.author} className="author-image" />
           <span className="author-name">{post.author}</span>
         </footer>
+        
       )}
     </article>
   );

@@ -1,8 +1,8 @@
 import Page_title from '../components/Page_title'; 
-import './Events.css'
+import './EventsPage.css'
 
 
-function Eventos() {
+function EventosPage() {
     return (
         <div className='eventos-container'>
             <Page_title title="Calendário Colaborativo de Eventos" />
@@ -22,4 +22,4 @@ function Eventos() {
       </div>
     );
 }
-export default Eventos
+export default EventosPage

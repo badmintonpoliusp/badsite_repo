@@ -2,25 +2,25 @@
 import autorImg from '../assets/images/team/Bruno.png'; // Supondo que o nome do arquivo seja este
 
 export const blogData = [
+  // {
+  //   id: 2,
+  //   slug: 'legado-da-familia-bad-poli-usp',
+  //   title: 'Além das Quadras: O Legado da Familia Bad Poli-USP',
+  //   date: '2025-07-07',
+  //   author: 'Equipe Editorial',
+  //   authorImage: null,
+  //   introQuote: 'Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina.',
+  //   content: `
+  //     <p>Este é o espaço para o conteúdo completo do post "Legado da Família".</p>
+  //     <p>Você pode detalhar aqui a história, os valores e as conquistas que formam o legado da equipe, usando múltiplos parágrafos.</p>
+  //   `
+  // },
   {
     id: 1,
-    slug: 'legado-da-familia-bad-poli-usp',
-    title: 'Além das Quadras: O Legado da Familia Bad Poli-USP',
-    date: '2025-07-07',
-    author: 'Equipe Editorial',
-    authorImage: null,
-    introQuote: 'Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina.',
-    content: `
-      <p>Este é o espaço para o conteúdo completo do post "Legado da Família".</p>
-      <p>Você pode detalhar aqui a história, os valores e as conquistas que formam o legado da equipe, usando múltiplos parágrafos.</p>
-    `
-  },
-  {
-    id: 2,
     slug: 'historia-do-badminton-minha-perspectiva',
-    title: 'A História do Badminton pela minha Perspectiva',
+    title: 'A história do badminton pela minha perspectiva',
     date: '2024-10-09',
-    author: 'Bruno Kay Kassab',
+    author: 'Bruno Kay Kawano',
     authorImage: autorImg,
     introQuote: 'Uma jornada de desafios e conquistas que moldaram nossa modalidade na USP.',
     content: `
@@ -30,3 +30,4 @@ export const blogData = [
     `
   }
 ];
+

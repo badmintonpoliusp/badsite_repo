@@ -9,8 +9,11 @@ function AppLayout() {
     <>
       <Header />
       <main className="main-content">
+
         {/* Outlet renders the current route's component (e.g., HomePage, Eventos) */}
+
         <Outlet /> 
+        
       </main>
       <Footer />
     </>

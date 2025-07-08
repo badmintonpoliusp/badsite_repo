@@ -8,6 +8,12 @@ If you already have a node_modules folder, run these commands first to ensure a 
 rd /s /q "node_modules"
 del package-lock.json
 
+Or in powershell:
+
+Remove-Item -Recurse -Force node_modules
+Remove-Item "package-lock.json"
+
+
 
 2. Install Dependencies
 -----------------------
