@@ -1,85 +1,65 @@
-import React, { useState } from 'react';
-import './Footer.css'
+import React from 'react';
 import { Link } from 'react-router-dom';
+// 1. Importando o ícone de Email junto com o do Instagram
+import { FaInstagram, FaEnvelope } from 'react-icons/fa'; 
+import './Footer.css'; 
 
-function Footer () {
-  return (<>
-    <div className="container">
-        <div className="block">
-            <p className = "title_bar_footer">Navegação</p>
-            <ul>
-                <li><Link to = "/" >Home</Link></li>
-                <li><Link to = "/eventos" >Eventos</Link></li>
-                <li><Link to = "/blog" >Blog</Link></li>
-                <li><Link to = "/galeria" >Galeria</Link></li>
-                <li><Link to = "/hall-da-fama" >Hall da Fama</Link></li>
-                <li><Link to = "/sobre" >Sobre</Link></li>
-            </ul>
-        </div>
+function Footer() {
+    return (
+        <footer className="site-footer">
+            <div className="footer-container">
+                <div className="footer-content">
+                    {/* Coluna 1: Informações do Time */}
+                    <div className="footer-column">
+                        <h4 className="footer-title">Treinos e Horário</h4>
+                        <ul className="footer-list">
+                            <li>Sexta: 17h às 21h</li>
+                            <li>Módulo 6 - CEPEUSP</li>
+                        </ul>
+                    </div>
 
-        <div className="block">
-            <p className = "title_bar_footer">Parceria</p>
-            <ul>
-                <li>Patrocínios</li>
-                <li>Contribuições</li>
-                <li><a target="_blank" 
-                rel="Site da Atlética Poli Usp - Incentivo" 
-                href="https://www.atleticapoliusp.com.br/lei-de-incentivo">
-                Lei de Incentivo</a></li>
-            </ul>
-        </div>
+                    {/* Coluna 2: Links Importantes */}
+                    <div className="footer-column">
+                        <h4 className="footer-title">Links Importantes</h4>
+                        <ul className="footer-list">
+                            <li><a href="https://www.atleticapoliusp.com.br/" target="_blank" rel="noopener noreferrer">Atlética da Poli</a></li>
+                            <li><a href="https://cepe.usp.br/" target="_blank" rel="noopener noreferrer">CEPEUSP</a></li>
+                            <li><a href="https://www.febasp.org.br/" target="_blank" rel="noopener noreferrer">FEBASP</a></li>
+                            <li><a href="https://www.atleticapoliusp.com.br/lei-de-incentivo" target="_blank" rel="noopener noreferrer">Lei de Incentivo</a></li>
+                        </ul>
+                    </div>
 
-        <div className="block">
-            <p className = "title_bar_footer">Links úteis</p>
-            <ul>
-                <li><a target="_blank" 
-                rel="Site da Atlética Poli Usp" 
-                href="https://www.atleticapoliusp.com.br/">
-                A.A.A.P.</a></li>
+                    {/* Coluna 3: Contato e Redes Sociais */}
+                    <div className="footer-column">
+                        <h4 className="footer-title">Contato e Redes</h4>
+                        <ul className="footer-list contact-list"> {/* Adicionei uma classe para tratar o alinhamento */}
+                            {/* 2. Email com ícone */}
+                            <li>
+                                <a href="mailto:bad.poliusp@gmail.com" className="icon-link">
+                                    <FaEnvelope />
+                                    <span>bad.poliusp@gmail.com</span>
+                                </a>
+                            </li>
+                            {/* 3. Instagram com ícone, nome e link corrigido */}
+                            <li>
+                                <a href="https://www.instagram.com/badminton_poliusp/" target="_blank" rel="noopener noreferrer" className="icon-link">
+                                    <FaInstagram />
+                                    <span>@badminton_poliusp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <li><a target="_blank" 
-                rel="Site do CEPEUSP" 
-                href="https://cepe.usp.br/">
-                CEPEUSP</a></li>
-
-                <li><a target="_blank" 
-                rel="Site da FEBASP" 
-                href="https://www.febasp.org.br/">
-                FEBASP</a></li>
-
-            </ul>
-        </div>
-
-        {/* <div className="block">
-            <p className = "title_bar_footer">Mídias Sociais</p>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-            </ul>
-        </div> */}
-
-        <div className="block">
-            <div>
-                <p className = "title_bar_footer">Treino e Horário</p>
-
-                <ul>
-                <li>Sexta: 17h às 21h</li>
-                    <li>Módulo 6 - CEPEUSP</li> 
-                </ul>
-
+                <div className="footer-copyright">
+                    <p>
+                        Copyright ©2025 Equipe de Badminton da Poli-Usp. Todos os direitos reservados. 
+                        Desenvolvido pelo <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>.
+                    </p>
+                </div>
             </div>
-
-            <div id="contact_block">
-                <p className = "title_bar_footer">Contato</p>
-                <ul>
-                    <li><a href="mailto:bad.poliusp@gmail.com">bad.poliusp@gmail.com</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="marco_zero"><p id="copyright">Copyright ©2025 Equipe de Badminton da Poli-Usp. Todos os direitos reservados. Desenvolvido pelo <Link to = "/projeto-marco-zero" >Projeto Marco Zero</Link>.</p></div>
-  </>);
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;

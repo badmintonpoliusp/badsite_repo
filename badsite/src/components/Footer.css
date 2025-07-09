@@ -1,112 +1,112 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Estilo principal do rodapé */
+.site-footer {
+    background-color: hsl(214, 95%, 20%);
+    color: #f0f0f0;
+    padding: 50px 0 20px 0;
+    border-top: 3px solid hsl(214, 95%, 30%);
+    margin-top: auto;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-li a{
-    color: #ffffff;
-    text-decoration:none;
-}
-
-li a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-li a:hover {
-    color: #f1c40f;
-    text-decoration: none;
-    background-color: hsl(0, 0%, 80%);
-}
-p {
-    margin: 0;
-}
-
-.container {
-    color: #ffffff;
-    height: auto;
-    background-color: #011d42;
+/* Container que segura as colunas */
+.footer-content {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 2% 10%;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
-.block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.footer-column {
+    flex: 1;
+    min-width: 220px;
 }
 
-.title_bar_footer {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1.1em;
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 1px solid hsl(214, 95%, 30%);
+    padding-bottom: 10px;
 }
 
-#contact_block {
-    margin-top: 20px;
-}
-
-#marco_zero {
-    height: 80px;
-    display: flex;
-    color: white;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 15px;
-}
-
-#marco_zero a{
-    color: white;
-    text-decoration:underline;
-}
-
-#marco_zero a:visited{
-    color: white;
-}
-
-#copyright {
+.footer-list {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    font-size: 0.9em;
 }
 
+.footer-list li {
+    margin-bottom: 12px; /* Aumentei um pouco a margem para melhor espaçamento */
+}
+
+.footer-list a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* NOVA CLASSE para alinhar ícone e texto */
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 16px;
+}
+
+.icon-link svg { /* Estilo para o ícone em si */
+    font-size: 20px; 
+}
+
+/* Barra de Copyright na base */
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    border-top: 1px solid hsl(214, 95%, 25%);
+    padding-top: 20px;
+}
+
+.footer-copyright a {
+    color: #a7c5ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
-    .container {
+    .footer-content {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 15px;
-        gap: 25px;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
     }
 
-    .block {
+    .footer-column {
         width: 100%;
+        max-width: 350px;
     }
 
-    .block p, .block ul {
-        width: 100%;
+    .footer-title {
+        border-bottom: none;
+    }
+
+    .contact-list { /* No mobile, alinha os itens de contato à esquerda dentro do bloco centralizado */
         text-align: left;
-    }
-
-    #contact_block {
-        margin-top: 25px;
     }
 }
