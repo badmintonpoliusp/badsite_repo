@@ -63,3 +63,8 @@
   color: #555;
   font-family: Arial, sans-serif;
 }
+
+p{
+  text-indent: 3mm;
+  text-align: justify;
+}

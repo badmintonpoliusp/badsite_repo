@@ -21,7 +21,7 @@ export const blogData = [
   },
   {
   id: 2,
-  title: 'Além das Quadras: O Legado da Familia Bad Poli-USP',
+  title: 'Como eu ajudei o badminton a ser o que ele é hoje',
   date: '2025-07-09',
   author: 'Henrique Nassu',
   authorImage: HenriqueImg,

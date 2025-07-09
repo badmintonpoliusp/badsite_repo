@@ -1,59 +1,97 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './ImageSlider.css';
-
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// 1. Pre-load all possible image folders using Vite's static glob import.
-const homeImagesGlob = import.meta.glob('/src/assets/images/home/*.{png,jpg,jpeg,svg,gif,webp}', { eager: true });
-const galleryImagesGlob = import.meta.glob('/src/assets/images/gallery/*.{png,jpg,jpeg,svg,gif,webp}', { eager: true });
-// Add more folders here as needed, e.g., for events
-// const eventImagesGlob = import.meta.glob('/src/assets/images/events/*.{...}');
+// Componente personalizado para as setas de navegação
+const NextArrow = ({ onClick }) => (
+  <button className="slick-arrow next-arrow" onClick={onClick}>
+    <FaChevronRight />
+  </button>
+);
 
+const PrevArrow = ({ onClick }) => (
+  <button className="slick-arrow prev-arrow" onClick={onClick}>
+    <FaChevronLeft />
+  </button>
+);
 
-// The component now accepts a 'source' prop to decide which images to show.
+const imageSources = {
+  home: import.meta.glob('/src/assets/images/home/*.{png,jpg,jpeg,svg,gif,webp}', { 
+    eager: true,
+    query: {
+      title: true,
+      alt: true
+    }
+  }),
+  gallery: import.meta.glob('/src/assets/images/gallery/*.{png,jpg,jpeg,svg,gif,webp}', {
+    eager: true,
+    query: {
+      title: true,
+      alt: true
+    }
+  })
+};
+
 const ImageSlider = ({ source = 'home' }) => {
+  const imageModules = imageSources[source] || imageSources.home;
   
-  // 2. Choose which set of images to use based on the 'source' prop.
-  let imageModules;
-  switch (source) {
-    case 'gallery':
-      imageModules = galleryImagesGlob;
-      break;
-    // case 'events':
-    //   imageModules = eventImagesGlob;
-    //   break;
-    case 'home':
-    default:
-      imageModules = homeImagesGlob;
-      break;
-  }
-
-  // Convert the chosen modules into a simple array of image URLs.
-  const images = Object.values(imageModules).map(module => module.default);
+  const images = Object.entries(imageModules).map(([path, module]) => ({
+    src: module.default,
+    title: path.split('/').pop().split('.')[0].replace(/[-_]/g, ' '),
+    alt: module.title || path.split('/').pop().split('.')[0].replace(/[-_]/g, ' ')
+  }));
 
   const settings = {
     dots: true,
-    infinite: images.length > 1,
-    speed: 500,
+    infinite: true,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    adaptiveHeight: true
+    autoplaySpeed: 3500, // 3,5 segundos por slide
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    fade: true,
+    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
   };
 
   if (images.length === 0) {
-    return <div className="slider-placeholder">No images found for this section.</div>;
+    return (
+      <div className="slider-placeholder">
+        <div className="placeholder-content">
+          <i className="placeholder-icon">📷</i>
+          <p>Nenhuma imagem encontrada nesta seção</p>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {images.map((imageSrc, index) => (
-          <div key={index}>
-            <img src={imageSrc} alt={`Slide ${index + 1}`} className="slider-image" />
+        {images.map((image, index) => (
+          <div key={index} className="slide-wrapper">
+            <div className="image-container">
+              <img 
+                src={image.src} 
+                alt={image.alt} 
+                className="slider-image" 
+                loading="lazy"
+              />
+            </div>
+            {image.title && (
+              <div className="image-caption">
+                <h3 className="image-title">{image.title}</h3>
+                <div className="slide-counter">
+                  {index + 1} / {images.length}
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </Slider>
