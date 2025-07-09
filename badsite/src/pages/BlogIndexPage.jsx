@@ -10,16 +10,16 @@ import Page_title from '../components/Page_title';
 import './BlogIndexPage.css';
 
 const BlogIndexPage = () => {
-  const mainPost = blogData.find(post => post.id === 1);
+  // const mainPost = blogData.find(post => post.id === 1);
 
   return (
     <div className="blog-index-page">
-      <section className="main-post-intro">
+      <section className="blog-intro">
         
-        <Page_title title = {mainPost.title} />
+        <Page_title title = {"Além das Quadras: O Legado da Família Bad Poli"} />
 
         <blockquote className="intro-quote">
-          “{mainPost.introQuote}”
+          “{"“Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina.”"}”
         </blockquote>
       </section>
 

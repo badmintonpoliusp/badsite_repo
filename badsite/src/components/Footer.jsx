@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import './Footer.css'
+
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaEnvelope } from 'react-icons/fa'; 
+
+import './Footer.css';
 
 function Footer () {
   return (<>

@@ -1,6 +1,8 @@
+//importar a imagem 
 import BrunoImg from '../assets/images/profile/Bruno.png';
-import HuaImg from '../assets/images/profile/Hua.png';
 import BranquinhoImg from '../assets/images/profile/Branquinho.png';
+import WilliamImg from '../assets/images/profile/William.png';
+import defaultImg from '../assets/images/profile/default.png';
 
 
 
@@ -8,34 +10,51 @@ export const hallOfFameData = [
   {
     id: 1,
     name: 'Bruno Kawano',
-    tenure: '(2017 - 2020)',
+    year: '(2017 - 2020)',
     imageUrl: BrunoImg,
-    title: 'Título', // The title on the left, e.g., "Fundador", "Capitão", etc.
-    conquistas: [ // An array for achievements
-      '1º Lugar na Regional Febasp (abril de 2024)',
-    ],
-    contribuicoes: 'Co-(re)fundador da equipe de baminton da poli usp CAIXA DE TEXTO CAIXA DE TEXTO CAIXA DE TEXTO TEXTOCAIXA DE TEXTOCAIXA DE TEXTOCAIXA DE TEXTOCAIXA DE TEXTOCAIXA DE TEXTOCAIXA DE TEXTO(leia mais)',
+    title: 'Pai do Badpoli', 
+    // conquistas: [ 
+    //   '1º Lugar na simples C da Regional Febasp (abril de 2024)',
+    // ],
+    introduction: 'Conhecido como Brunin, ou o gêmeo do Nassu, foi um dos fundadores do Badpoli. Sua dedicação ao badminton foi fundamental para que a modalidade se tornasse o que é hoje.',
   },
   {
-    id: 2,
-    name: 'Luiz Felipe Branquinho',
-    tenure: '(2021 - Presente)',
-    imageUrl: BranquinhoImg, // Replace with the correct image import
-    title: 'Ex-DM',
-    conquistas: [
-      'Conquista A',
-      'Conquista B',
-    ],
-    contribuicoes: '', // Leaving this blank will hide the section
+    id: 2,  
+    name: 'William Fukishima',
+    year: '(2017 - 2020)',
+    imageUrl: WilliamImg, 
+    title: 'Pai do Badpoli',
+    // conquistas: [], 
+    introduction: 'Fã de badminton desde pequeno, ficou decepcionado ao perceber que o esporte não existia na Poli. Foi então que, junto com o Brunin, decidiu fundar o Badpoli. Foi um dos principais responsáveis pela estruturação do time. Mesmo já formado, ainda aparece de vez em quando nos treinos para compartilhar sua experiência com a galera.',
   },
   {
     id: 3,
-    name: 'Hua Hua Cao',
-    tenure: '(2018 - 2021)',
-    imageUrl: HuaImg, // Replace with the correct image import
-    title: 'DM Viado',
-    conquistas: [], // An empty array will hide the "Conquista" section
-    contribuicoes: 'Ajudou a estruturar os treinos iniciais da equipe e foi fundamental na integração de novos membros.',
+    name: 'Luiz Felipe Branquinho',
+    year: '(2023 - 2024)',
+    imageUrl: BranquinhoImg, 
+    title: 'Rato do ano',
+    // conquistas: [
+    // ],
+    introduction: 'Foi o bixo de destaque do ano de 2024, participando ativamente dos treinos. Depois da virada do ano já não vimos a sua sombra, reza a lenda que partiu para o Moçambique curtir a sua vida de herdeiro...',
   },
-  // Add more people here
+  {
+    id: 4,  
+    name: 'Mr. Leidelas',
+    year: '(2023 - 2024)',
+    imageUrl: defaultImg, 
+    title: 'O Lendário',
+    // conquistas: [], 
+    introduction: 'Conhecido apenas como Mr. Leidelas, ele quebrou o estereótipo do nerd "certinho". Sua verdadeira identidade é um mistério para muitos, mas seu legado ecoa até hoje em cada treino e na alma do time.',
+  },
+  // Adicionar mais pessoas aqui
+  // Seguindo este formato:
+  /* 
+  {
+    id: (de preferência, seguir a ordem),
+    year: ,
+    imageUrl: ,
+    tile: ,
+    introduction , 
+  }
+  */
 ];

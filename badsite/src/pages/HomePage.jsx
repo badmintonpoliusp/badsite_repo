@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 import ImageSlider from '../components/ImageSlider';
 import './HomePage.css';
 
+import Page_title from '../components/Page_title';
+import SectionContactInfo from "../components/SectionContactInfo"; 
+import Supporters  from '../components/Supporters';
+import Post2Display from '../components/Post2Display';
+
 const HomePage = () => {
   return (
+    <div className='home-page'>
     <section className="hero-section">
       <div className="hero-text">
         <h1>Engenharia, Garra e Paixão em Cada Ponto</h1>
@@ -18,6 +24,13 @@ const HomePage = () => {
         <ImageSlider source="home" />
       </div>
     </section>
+
+    <Post2Display/>
+
+    <Page_title title={'Comunidade USP: Venha Treinar!'} />
+    <SectionContactInfo/> 
+    <Supporters/>
+    </div>
   );
 };
 

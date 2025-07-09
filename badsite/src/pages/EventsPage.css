@@ -16,3 +16,28 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
+.Title-result{
+    color: #0a2342;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Title-result h1{
+  margin-bottom: 0;
+}
+
+.Title-result h3{
+  margin-top: 0;
+  font-size: 2.2em; /* Torna o texto significativamente maior */
+  font-weight: 900; /* Negrito máximo para um impacto visual forte */
+  letter-spacing: 3px; /* Aumenta o espaçamento entre as letras para dar mais "expansão" */
+  color: #f1c40f; 
+}

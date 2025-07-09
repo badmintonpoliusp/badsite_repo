@@ -7,7 +7,6 @@ import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 function SectionContactInfo() {
     return (
         <div>
-            <Page_title title={'Contatos e Localização'} />
             <div className='section-container'>
 
                 {/* Bloco do Mapa com a URL correta */}

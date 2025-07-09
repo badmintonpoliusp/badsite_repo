@@ -57,7 +57,7 @@ const ResultadosPopup = () => {
                 <tr><td>NIPPON CHALLENGE (NOVEMBRO 2024)</td><td>DANIEL TRIEWEILER <br /> FERNANDO HUANG</td><td>POLI</td><td>DUPLA E</td><td>3º LUGAR</td></tr>                
                 <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>LUCAS BOPP</td><td>POLI</td><td>SIMPLES C</td><td>3º LUGAR</td></tr>
                 <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>LUCAS BOPP <br /> GABRIEL FERIGATO</td><td>POLI <br /> FÍSICA</td><td>DUPLA C</td><td>3º LUGAR</td></tr>
-                <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>ERIC MIURA <br /> PEDRO KOCH</td><td>POLI</td><td>DUPLA C</td><td>3º LUGAR</td></tr>
+                <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>ERIC MIURA <br /> PEDRO KOCH</td><td>FARMA <br />POLI</td><td>DUPLA C</td><td>3º LUGAR</td></tr>
               </tbody>
             </table>
           </div>

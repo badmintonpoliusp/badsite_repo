@@ -8,7 +8,10 @@ const EventosPage = () => {
   return (
     <main className="events-page-container">
       <div className='resultados-container'>
-        <Page_title title="Resultado de Premiações" />
+        <div className='Title-result'>
+          <h1>Resultados que ecoam nos gritos da torcida:</h1>
+          <h3>BORA POLI!</h3>
+        </div>
         <ResultadosPopup />
       </div>
 
