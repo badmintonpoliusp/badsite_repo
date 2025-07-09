@@ -46,6 +46,14 @@ export const hallOfFameData = [
     // conquistas: [], 
     introduction: 'Conhecido apenas como Mr. Leidelas, ele quebrou o estereótipo do nerd "certinho". Sua verdadeira identidade é um mistério para muitos, mas seu legado ecoa até hoje em cada treino e na alma do time.',
   },
+  {
+    id: 4,  
+    name: 'Eduardo Pierini',
+    year: '(2023 - 2024)',
+    imageUrl: defaultImg, 
+    title: 'IA de Pinheiros',
+    introduction: 'Para alguns, é conhecido como o "pró", para outros, tratava-se de uma mera invenção. Ninguém sabe ao certo se essa figura existia ou não até a recepção dos bixos em 2025.  Os quatrocentos smashes que ele deus nos bixos fez acreditar que realmente há um abismo entre nós, os meros mortais, com os semideuses do badminton. Sua presença é sentida em cada treino, mesmo que ele não esteja lá fisicamente.',
+  },
   // Adicionar mais pessoas aqui
   // Seguindo este formato:
   /* 

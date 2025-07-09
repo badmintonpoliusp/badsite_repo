@@ -2,6 +2,7 @@
 
 import BrunoImg from '../assets/images/profile/Bruno.png';
 import HenriqueImg from '../assets/images/profile/henrique.png';
+import HuaImg from "../assets/images/profile/hua.png"
 
 export const blogData = [
   {
@@ -29,6 +30,21 @@ export const blogData = [
     <p>Desde a participação em treinos com três pessoas, em que jogávamos individuais até os braços caírem, até a entrada das primeiras pessoas, eu vi a modalidade crescer como nunca imaginava que iria acontecer, e sempre me divertindo muito, seja jogando ou conversando com as pessoas do time. Sempre fui ruim no jogo, melhorei um pouco depois de fazer uns treinos individuais, porém nunca a ponto de ganhar um jogo em um torneio. A maioria das vezes em que eu me inscrevia para jogar era principalmente para dar apoio às pessoas do time que iriam junto, seja o Bruninho, quando íamos em torneios federados só para apanhar, ou depois, quando ia mais gente, para dar carona até o local dos campeonatos.</p>
     <p>Vendo agora que estou quase parando de jogar, porque não tenho mais tempo para isso, fico muito feliz de como o badminton cresceu e de como se tornou um ambiente acolhedor e divertido de passar o tempo. Para mim, esses foram momentos inesquecíveis e, apesar do caos, sempre foi muito divertido fazer parte da equipe, participar de projetos malucos como um lançador de petecas. No fim, acredito que fazer parte de uma equipe é aproveitar esses momentos, ver a felicidade do outro se tornando a sua, compartilhar as dificuldades e comemorações, e são coisas que vou carregar comigo para sempre.</p>
     `
+  },
+  {
+    id: 3,
+    title: "Relato de um ex-diretor de modalidade",
+    date: '2025-07-09',
+    author: "Hua Hua Cao",
+    authorImage: HuaImg,
+    content: `
+    <p>Já ouvi falar do esporte logo nos primeiros dias pelos amigos, mas nunca cheguei a me interessar por ele, por motivos óbvios: eu não tinha tido muito contato antes e era considerado um esporte “minoritário” — quase ninguém participava. Na época, eu também já fazia parte da natação e, como um bom asiático, do ping pong (se alguém afirmasse que há mais asiáticos no ping pong do que no badminton hoje em dia, eu certamente teria minhas dúvidas) da Poli também.</p>
+    <p>Entrei no segundo semestre — certamente não lembro dos detalhes, mas uma coisa eu me recordo: juntei-me a um treino de badminton para acompanhar um amigo. Nem imaginava que um dia seria uma parte dele.</p>
+    <p>Assumi o cargo de DM, ou diretor de modalidade, exatamente há um ano. Acompanhei o crescimento do esporte: de 15 pessoas quando entrei, até a explosão de bixos em 2025, com o pico atingindo cerca de 50 participantes. A meu ver, tal mudança não aconteceu por mera coincidência, mas foi fruto da construção de um ambiente acessível e integrador.</p>
+    <p>O BadPoli passou a significar muito mais do que um esporte para mim. Não se trata só de peteca e raquete — é muito mais do que essas duas palavras podem englobar: é lugar de aprendizagem, amizade, convívio, emoção e... FAMÍLIA!</p>
+    <p>Até hoje me recordo das “loucuras” que já vivi, seja a luta de sumô dentro da quadra com o Renan, como despedida antes do intercâmbio, ou o treino de condicionamento como preparação para a Volta USP: corridas em grupo após o treino, na pista de atletismo, terminando todo mundo morto — para depois comer aquela janta e voltar pra casa só depois da meia-noite...</p>
+    <p>Recentemente, me despedi do cargo, mas posso afirmar que recebi tanto quanto deixei.</p>
+  `
   },
 ];
 
