@@ -1,12 +1,19 @@
-.text{
-    width: 80%;
-    padding-bottom: 5%;
+/* SectionQuemSomos.css */
+.text {
+    max-width: 800px; /* Define uma largura máxima para boa legibilidade */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px 5%; /* Adiciona espaçamento nas laterais e embaixo */
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
-.text p{
+.text p {
     font-size: 18px;
-    text-indent: 3mm;
-    text-align: justify;
+    line-height: 1.7;   /* Melhora a legibilidade */
+    text-align: justify; /* Mais confortável para leitura web */
+    margin-bottom: 1em; /* Espaço entre parágrafos */
+}
+
+/* Opcional: manter o recuo do primeiro parágrafo */
+.text p:first-of-type {
+    text-indent: 1.5em; 
 }
