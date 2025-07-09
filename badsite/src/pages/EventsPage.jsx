@@ -1,25 +1,23 @@
+import React from 'react';
 import Page_title from '../components/Page_title'; 
-import './EventsPage.css'
+import './EventsPage.css';
+import ResultadosPopup from '../components/Resultado_de_premiações';
+import GoogleCalendar from '../components/GoogleCalendar';
 
-
-function EventosPage() {
-    return (
-        <div className='eventos-container'>
-            <Page_title title="Calendário Colaborativo de Eventos" />
-            <div className='calendar-and-text'>
-                <iframe
-                    src="https://calendar.google.com/calendar/embed?src=bad.poliusp%40gmail.com&ctz=America%2FSao_Paulo"
-                    title="Calendário Colaborativo de Eventos"
-                    className="google-calendar-iframe" 
-                ></iframe>
-            
-                <p className='notice'>Este calendário é destinado à divulgação de campeonatos e eventos. 
-                    Convidamos todos os organizadores a compartilharem seus eventos conosco. 
-                    Para incluir seu evento, entre em contato pelo e-mail bad.poliusp@gmail.com, 
-                    mencionando "Divulgação de Evento" no assunto.
-                </p>
-            </div>
+const EventosPage = () => {
+  return (
+    <main className="events-page-container">
+      <div className='resultados-container'>
+        <Page_title title="Resultado de Premiações" />
+        <ResultadosPopup />
       </div>
-    );
-}
-export default EventosPage
+
+      <div className='eventos-container'>
+        <Page_title title="Calendário Colaborativo de Eventos" />
+        <GoogleCalendar />
+      </div>
+    </main>
+  );
+};
+
+export default EventosPage;
