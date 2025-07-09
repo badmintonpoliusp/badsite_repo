@@ -7,13 +7,10 @@
 }
 
 .text p {
+    text-indent: 1.5em;
     font-size: 18px;
     line-height: 1.7;   /* Melhora a legibilidade */
     text-align: justify; /* Mais confortável para leitura web */
     margin-bottom: 1em; /* Espaço entre parágrafos */
 }
 
-/* Opcional: manter o recuo do primeiro parágrafo */
-.text p:first-of-type {
-    text-indent: 1.5em; 
-}
