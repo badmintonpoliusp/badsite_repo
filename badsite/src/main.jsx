@@ -18,7 +18,7 @@ import BlogPostPage from './pages/BlogPostPage';
 import MarcoZero from './pages/MarcoZero';
 import GalleryPage from './pages/GalleryPage';
 import AboutPage from './pages/AboutPage';
-import HallPage from './pages/HallPage';
+import HallPage from './pages/HallOfFamePage';
 // You can create placeholder files for these pages for now
 // import GaleriaPage from './pages/GaleriaPage'; 
 // import SobrePage from './pages/SobrePage';

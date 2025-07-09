@@ -1,13 +1,14 @@
-// src/pages/HomePage.jsx
 import React from 'react';
+import ImageSlider from '../components/ImageSlider'; // Your reusable slider
+import PageTitle from '../components/Page_title';
 
-function HomePage() {
+const HomePage = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Eae seu Malauuuuu!</p>
-    </div>
+    <>
+      <PageTitle title="Bem-vindo!" />
+      <ImageSlider source="home" />
+    </>
   );
-}
+};
 
 export default HomePage;
