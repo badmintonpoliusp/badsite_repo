@@ -1,6 +1,7 @@
 // Usaremos uma imagem de exemplo que pode estar na sua pasta de equipe
-import brunoImg from '../assets/images/team/Bruno.png'; // Supondo que o nome do arquivo seja este
-import henriqueImg from '../assets/images/blog/henrique.png'; // Supondo que o nome do arquivo seja este
+
+import BrunoImg from '../assets/images/profile/Bruno.png';
+import HenriqueImg from '../assets/images/profile/henrique.png';
 
 export const blogData = [
   {
@@ -8,7 +9,7 @@ export const blogData = [
     title: 'A história do badminton pela minha perspectiva',
     date: '2024-10-09',
     author: 'Bruno Kay Kawano',
-    authorImage: brunoImg,
+    authorImage: BrunoImg,
     introQuote: 'Uma jornada de desafios e conquistas que moldaram nossa modalidade na USP.',
     content: `
       <p>A forma como o Badminton foi fundado é uma das minhas partes favoritas da história da modalidade. Logo que entramos na USP já queríamos fundar a modalidade, mas a ideia morreu rápido, faltou motivação. Depois da pandemia, voltei a jogar junto com o William e um dia aleatório, do nada, virei pra ele e disse “Bora fundar o badminton? A gente conhece o cara que pode nos passar o contato do diretor das modalidades esportivas da Poli. Vou mandar uma mensagem pra ele agora.”, e assim se abriu a modalidade na USP. Acho que realmente o que faltava era só esse último passo: tomar uma atitude que fez com que não tivesse mais volta, formalizar a modalidade na universidade.</p>
@@ -23,7 +24,7 @@ export const blogData = [
   title: 'Além das Quadras: O Legado da Familia Bad Poli-USP',
   date: '2025-07-09',
   author: 'Henrique Nassu',
-  authorImage: henriqueImg,
+  authorImage: HenriqueImg,
   introQuote: 'Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina.',
   content: `
     <p>Fiz parte do time de badminton da Poli desde que ele recomeçou em 2022, por convite do William e do Bruninho, que estavam remontando a equipe que tinha sido desfeita anos antes. Participei dos primeiros projetos, de treinos físicos em horários alternativos no CEPE até torneios para conhecer mais do meio e tentar algum contato. Lembro dos dois fazendo a proposta para eu participar da fundação do time, mas eu recusei, pois já tinha me envolvido na gestão de um time anteriormente e sabia o quão difícil e estressante era a maioria do processo. Mesmo assim, sempre quis estar presente e ajudar na formação do time, mesmo que informalmente.</p>

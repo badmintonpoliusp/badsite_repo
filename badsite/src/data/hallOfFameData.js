@@ -1,14 +1,15 @@
-// Import the images for each person
-import brunoKawanoImg from '../assets/images/halldafama/bruno.png'; 
-import branquinhoImg from '../assets/images/halldafama/branquinho.jpg'; 
-import huaImg from '../assets/images/team/Hua.png';
+import BrunoImg from '../assets/images/profile/Bruno.png';
+import HuaImg from '../assets/images/profile/Hua.png';
+import BranquinhoImg from '../assets/images/profile/Branquinho.png';
+
+
 
 export const hallOfFameData = [
   {
     id: 1,
     name: 'Bruno Kawano',
     tenure: '(2017 - 2020)',
-    imageUrl: brunoKawanoImg,
+    imageUrl: BrunoImg,
     title: 'Título', // The title on the left, e.g., "Fundador", "Capitão", etc.
     conquistas: [ // An array for achievements
       '1º Lugar na Regional Febasp (abril de 2024)',
@@ -19,7 +20,7 @@ export const hallOfFameData = [
     id: 2,
     name: 'Luiz Felipe Branquinho',
     tenure: '(2021 - Presente)',
-    imageUrl: branquinhoImg, // Replace with the correct image import
+    imageUrl: BranquinhoImg, // Replace with the correct image import
     title: 'Ex-DM',
     conquistas: [
       'Conquista A',
@@ -31,7 +32,7 @@ export const hallOfFameData = [
     id: 3,
     name: 'Hua Hua Cao',
     tenure: '(2018 - 2021)',
-    imageUrl: huaImg, // Replace with the correct image import
+    imageUrl: HuaImg, // Replace with the correct image import
     title: 'DM Viado',
     conquistas: [], // An empty array will hide the "Conquista" section
     contribuicoes: 'Ajudou a estruturar os treinos iniciais da equipe e foi fundamental na integração de novos membros.',

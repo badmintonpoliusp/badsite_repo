@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 import './Header.css';
-import logo from '../assets/images/icon.jpg';
+import logo from '../assets/images/icons/Badminton - Logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

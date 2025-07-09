@@ -1,55 +1,53 @@
-// src/data/membersData.js
+import PedroImg from '../assets/images/profile/Pedro.png';
+import HuaImg from '../assets/images/profile/Hua.png';
+import MoizesImg from '../assets/images/profile/Moizes.png';
+import TakedaImg from '../assets/images/profile/Takeda.png';
+import KishiImg from '../assets/images/profile/Kishi.png';
+import AkiraImg from '../assets/images/profile/Akira.png';
+import WuImg from '../assets/images/profile/Wu.png';
 
-// Importe as imagens aqui. O Vite vai processá-las corretamente.
-import pedroImg from '../assets/images/team/pedro.png';
-import huaImg from '../assets/images/team/Hua.png';
-import moizesImg from '../assets/images/team/moizes.png';
-import davidImg from '../assets/images/team/takeda.png';
-import eduardoImg from '../assets/images/team/kishi.png';
-import gustavoImg from '../assets/images/team/Akira.png';
-import wuImg from '../assets/images/team/wu.jpg';
 
 const membersData = [
   {
     id: 1,
     name: 'Pedro Koch Mendonça',
-    imageUrl: pedroImg,
+    imageUrl: PedroImg,
     description: 'Descrição... (clicar para ver mais)',
   },
   {
     id: 2,
     name: 'Hua Hua Cao',
-    imageUrl: huaImg,
+    imageUrl: HuaImg,
     description: 'Descrição... (clicar para ver mais)',
   },
   {
     id: 3,
     name: 'Moizés Ávila',
-    imageUrl: moizesImg,
+    imageUrl: MoizesImg,
     description: 'Descrição... (clicar para ver mais)',
   },
   {
     id: 4,
     name: 'David Kazuo Takeda',
-    imageUrl: davidImg,
+    imageUrl: TakedaImg,
     description: 'Descrição... (clicar para ver mais)',
   },
   {
     id: 5,
     name: 'Eduardo Kenzo Kishi',
-    imageUrl: eduardoImg,
+    imageUrl: KishiImg,
     description: 'Descrição... (clicar para ver mais)',
   },
   {
     id: 6,
     name: 'Gustavo Akira Hassimoto',
-    imageUrl: gustavoImg,
+    imageUrl: AkiraImg,
     description: 'Descrição... (clicar para ver mais)',
   },
     {
     id: 7,
     name: 'Wu Kam Long',
-    imageUrl: wuImg,
+    imageUrl: WuImg,
     description: 'Descrição... (clicar para ver mais)',
   },
 ];

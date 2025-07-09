@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoMZ from '../assets/images/LogoMZ.png';
+import LogoMZ from '../assets/images/icons/Marcozero - Logo.png';
 
 import Page_title from '../components/Page_title'; 
 import MemberCard from '../components/MZ_membercard';
