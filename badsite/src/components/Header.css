@@ -61,10 +61,6 @@
   font-size: 1.25em;
 }
 
-.nav-links a:hover {
-  color: #f1c40f;
-}
-
 /* Ícone do menu: escondido no desktop por padrão */
 .menu-icon {
   display: none;

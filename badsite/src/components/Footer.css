@@ -28,7 +28,7 @@ li a:visited {
 li a:hover {
     color: #f1c40f;
     text-decoration: none;
-    background-color: hsl(0, 0%, 80%);
+    
 }
 p {
     margin: 0;
