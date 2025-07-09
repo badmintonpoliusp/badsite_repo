@@ -11,7 +11,7 @@ const HomePage = () => {
         <p>
           Somos mais que uma equipe; somos um ponto de encontro para estudantes da Poli-USP que compartilham a paixão pelo badminton. Unimos a precisão da engenharia com a agilidade do esporte para competir, crescer e fazer história.
         </p>
-        <Link to="/equipe" className="cta-button">Conheça a Equipe</Link>
+        <Link to="/sobre" className="cta-button">Conheça a Equipe</Link>
       </div>
 
       <div className="hero-slider">

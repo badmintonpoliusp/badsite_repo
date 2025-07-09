@@ -5,14 +5,18 @@
   --dark: #212529;
 }
 
-/* Container */
+/* General container */
 .slider-container {
   position: relative;
-  max-width: 800px;
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.slider-container.expanded {
+  max-width: 50%;
 }
 
 /* Each slide */
@@ -20,12 +24,16 @@
   position: relative;
 }
 
-/* Image area */
+/* Image container with aspect ratio */
 .image-container {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background-color: #f8f9fa;
+}
+
+.image-container.expanded {
+  aspect-ratio: 3 / 2;
 }
 
 .slider-image {
@@ -61,7 +69,7 @@
   opacity: 0.8;
 }
 
-/* Custom arrows */
+/* Arrows */
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -117,7 +125,7 @@
   background: var(--secondary);
 }
 
-/* Placeholder */
+/* Placeholder state */
 .slider-placeholder {
   display: flex;
   align-items: center;
@@ -139,8 +147,12 @@
   margin-bottom: 0.5rem;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 768px) {
+  .slider-container.expanded {
+    max-width: 100%;
+  }
+
   .slick-arrow {
     width: 30px;
     height: 30px;

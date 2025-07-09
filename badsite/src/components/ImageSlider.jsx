@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './ImageSlider.css';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Custom arrow components
@@ -18,7 +18,7 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
-// Import images
+// Image imports
 const imageSources = {
   home: import.meta.glob('/src/assets/images/BackUp/home/*.{png,jpg,jpeg,svg,gif,webp}', {
     eager: true,
@@ -36,7 +36,7 @@ const imageSources = {
   })
 };
 
-const ImageSlider = ({ source = 'home' }) => {
+const ImageSlider = ({ source = 'home', mode = 'default' }) => {
   const imageModules = imageSources[source] || imageSources.home;
 
   const images = Object.entries(imageModules).map(([path, module]) => ({
@@ -63,7 +63,7 @@ const ImageSlider = ({ source = 'home' }) => {
 
   if (images.length === 0) {
     return (
-      <div className="slider-placeholder">
+      <div className={`slider-placeholder ${mode}`}>
         <div className="placeholder-content">
           <i className="placeholder-icon">📷</i>
           <p>Nenhuma imagem encontrada nesta seção</p>
@@ -73,11 +73,11 @@ const ImageSlider = ({ source = 'home' }) => {
   }
 
   return (
-    <div className="slider-container">
+    <div className={`slider-container ${mode}`}>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="slide-wrapper">
-            <div className="image-container">
+            <div className={`image-container ${mode}`}>
               <img
                 src={image.src}
                 alt={image.alt}

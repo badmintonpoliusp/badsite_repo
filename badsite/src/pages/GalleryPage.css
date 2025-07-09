@@ -1,9 +1,14 @@
 .gallery-page {
-  padding: 20px;
-  max-width: 1200px;
+  padding: 0px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .gallery-container {
   padding: 20px 0;
+}
+
+.gallery-section {
+  padding-top: 0;
+  padding-bottom: 0;
 }

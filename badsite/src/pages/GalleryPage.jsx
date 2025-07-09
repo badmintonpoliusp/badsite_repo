@@ -1,12 +1,14 @@
 // src/pages/GaleriaPage.jsx
-import ImageSlider from '../components/ImageSlider'; // Import the slider
-import Page_title from '../components/Page_title'; 
+import ImageSlider from '../components/ImageSlider';
+import Page_title from '../components/Page_title';
 
 function GalleryPage() {
   return (
-    <div>
-    <Page_title title="Galeria" />
-    <ImageSlider source="gallery" />
+    <div className="gallery-page">
+      <Page_title title="Galeria" />
+      <section className="gallery-section">
+        <ImageSlider source="gallery" mode="expanded" />
+      </section>
     </div>
   );
 }
