@@ -1,13 +1,23 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider'; // Your reusable slider
-import PageTitle from '../components/Page_title';
+import { Link } from 'react-router-dom';
+import ImageSlider from '../components/ImageSlider';
+import './HomePage.css';
 
 const HomePage = () => {
   return (
-    <>
-      <PageTitle title="Bem-vindo!" />
-      <ImageSlider source="home" />
-    </>
+    <section className="hero-section">
+      <div className="hero-text">
+        <h1>Engenharia, Garra e Paixão em Cada Ponto</h1>
+        <p>
+          Somos mais que uma equipe; somos um ponto de encontro para estudantes da Poli-USP que compartilham a paixão pelo badminton. Unimos a precisão da engenharia com a agilidade do esporte para competir, crescer e fazer história.
+        </p>
+        <Link to="/equipe" className="cta-button">Conheça a Equipe</Link>
+      </div>
+
+      <div className="hero-slider">
+        <ImageSlider source="home" />
+      </div>
+    </section>
   );
 };
 

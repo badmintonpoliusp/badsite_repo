@@ -5,7 +5,7 @@ import './ImageSlider.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-// Componente personalizado para as setas de navegação
+// Custom arrow components
 const NextArrow = ({ onClick }) => (
   <button className="slick-arrow next-arrow" onClick={onClick}>
     <FaChevronRight />
@@ -18,8 +18,9 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
+// Import images
 const imageSources = {
-  home: import.meta.glob('/src/assets/images/home/*.{png,jpg,jpeg,svg,gif,webp}', { 
+  home: import.meta.glob('/src/assets/images/BackUp/home/*.{png,jpg,jpeg,svg,gif,webp}', {
     eager: true,
     query: {
       title: true,
@@ -37,7 +38,7 @@ const imageSources = {
 
 const ImageSlider = ({ source = 'home' }) => {
   const imageModules = imageSources[source] || imageSources.home;
-  
+
   const images = Object.entries(imageModules).map(([path, module]) => ({
     src: module.default,
     title: path.split('/').pop().split('.')[0].replace(/[-_]/g, ' '),
@@ -51,7 +52,7 @@ const ImageSlider = ({ source = 'home' }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3500, // 3,5 segundos por slide
+    autoplaySpeed: 3500,
     pauseOnHover: true,
     pauseOnFocus: true,
     nextArrow: <NextArrow />,
@@ -77,10 +78,10 @@ const ImageSlider = ({ source = 'home' }) => {
         {images.map((image, index) => (
           <div key={index} className="slide-wrapper">
             <div className="image-container">
-              <img 
-                src={image.src} 
-                alt={image.alt} 
-                className="slider-image" 
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="slider-image"
                 loading="lazy"
               />
             </div>
