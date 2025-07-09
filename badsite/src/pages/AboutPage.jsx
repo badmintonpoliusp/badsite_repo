@@ -7,8 +7,8 @@ import './AboutPage.css'
 function AboutPage(){
     return(
     <div className="about-container">
-        <Page_title title={'Contatos e Localização'} />
         <SectionQuemSomos/>   
+        <Page_title title={'Contatos e Localização'} />
         <SectionContactInfo/> 
     </div>);    
 }
