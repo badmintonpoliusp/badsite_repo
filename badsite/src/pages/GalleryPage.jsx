@@ -6,7 +6,7 @@ function GalleryPage() {
   return (
     <div>
     <Page_title title="Galeria" />
-    <ImageSlider />
+    <ImageSlider source="gallery" />
     </div>
   );
 }

@@ -17,27 +17,42 @@
   height: 80px;
 }
 
+/* Make the entire logo area a flex container */
 .logo-container {
   display: flex;
   align-items: center;
   height: 100%;
+  text-decoration: none; /* Remove link underline */
+  color: inherit; /* Inherit color from header */
 }
 
+/* Constrain the logo image */
 .logo {
-  height: 100%;
+  height: 60px; /* Set a fixed height */
   width: auto;
   margin-right: 15px;
   object-fit: contain;
 }
 
+/* Clean hyperlink styling from logo text */
 .logo-text {
   font-size: 1.8em;
   font-weight: bold;
+  text-decoration: none;
+  color: white; /* Explicitly set text color */
 }
 
-/* Escondemos a lista de links e o ul por padrão */
+/* Remove link effects from logo link wrapper */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation links */
 .nav-links {
-  display: flex; /* Mudamos para flex para melhor alinhamento */
+  display: flex;
   align-items: center;
   height: 100%;
 }
@@ -61,47 +76,44 @@
   font-size: 1.25em;
 }
 
-/* Ícone do menu: escondido no desktop por padrão */
+/* Hamburger menu icon (mobile only) */
 .menu-icon {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
-
-/* --- ESTILOS RESPONSIVOS (A MÁGICA ACONTECE AQUI) --- */
+/* --- Responsive Styles --- */
 @media (max-width: 768px) {
-  
-  /* Ajusta o padding do header em telas menores */
   .app-header {
     padding: 0 20px;
   }
-  
-  /* Ajusta o texto da logo */
+
   .logo-text {
     font-size: 1.4em;
   }
 
-  /* Esconde os links no formato desktop */
+  .logo {
+    height: 50px;
+  }
+
   .nav-links {
-    display: none; /* Escondemos por padrão */
+    display: none;
     position: absolute;
-    top: 80px; /* Altura do header */
+    top: 80px;
     left: 0;
     width: 100%;
-    background-color: #0a2342; /* Mesmo fundo do header */
+    background-color: #0a2342;
     flex-direction: column;
     align-items: center;
     height: auto;
     padding-bottom: 20px;
   }
 
-  /* Mostra o menu quando a classe 'active' está presente */
   .nav-links.active {
     display: flex;
   }
 
-  /* Ajusta a lista de links para o formato vertical */
   .nav-links ul {
     flex-direction: column;
     width: 100%;
@@ -109,7 +121,7 @@
   }
 
   .nav-links li {
-    margin: 15px 0; /* Espaçamento vertical */
+    margin: 15px 0;
     margin-left: 0;
     text-align: center;
     width: 100%;
@@ -119,7 +131,6 @@
     font-size: 1.4em;
   }
 
-  /* Mostra o ícone do menu no mobile */
   .menu-icon {
     display: block;
   }
