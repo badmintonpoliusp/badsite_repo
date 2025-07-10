@@ -36,16 +36,17 @@
   line-height: 1.7;
   color: #555;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #0a2342;
+  background-color: hsl(214, 95%, 20%);;
   color: white;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
