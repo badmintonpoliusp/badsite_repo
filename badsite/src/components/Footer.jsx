@@ -6,6 +6,16 @@ import './Footer.css';
 function Footer() {
   const [showContribPopup, setShowContribPopup] = useState(false);
   const popupRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -152,10 +162,21 @@ function Footer() {
 
       <div id="marco_zero">
         <p id="copyright">
-          © 2025 Badminton Poli-USP
-          <br />
-          Desenvolvido por{' '}
-          <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>
+          {isMobile ? (
+            <>
+              © 2025 Badminton Poli-USP
+              <br />
+              Desenvolvido por{' '}
+              <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>
+            </>
+          ) : (
+            <>
+              Copyright © 2025 Equipe de Badminton da Poli-Usp. Todos os direitos reservados.
+              <br />
+              Desenvolvido pelo{' '}
+              <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>.
+            </>
+          )}
         </p>
       </div>
     </>
