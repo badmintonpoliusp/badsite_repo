@@ -31,9 +31,6 @@ function Footer() {
         <div className="block">
           <p className="title_bar_footer">Parceria</p>
           <ul>
-            <li><a target="_blank" 
-                   rel="Patrocínio Badminton Usp"
-                   href={patrocinioPDF}></a>Patrocínios</li>
             <li 
               onClick={() => setShowContribPopup(true)} 
               style={{ cursor: "url('assets/images/icons/shuttlecock-icon.cur'), pointer" }}
@@ -41,6 +38,9 @@ function Footer() {
               Contribuições
             </li>
             <li>
+            <li><a target="_blank" 
+                   rel="Patrocínio Badminton Usp"
+                   href={patrocinioPDF}></a>Patrocínios</li>
               <a 
                 target="_blank" 
                 rel="noopener noreferrer"
