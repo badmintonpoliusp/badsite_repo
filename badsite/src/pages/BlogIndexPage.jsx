@@ -10,16 +10,15 @@ import Page_title from '../components/Page_title';
 import './BlogIndexPage.css';
 
 const BlogIndexPage = () => {
-  // const mainPost = blogData.find(post => post.id === 1);
-
   return (
     <div className="blog-index-page">
       <section className="blog-intro">
         
         <Page_title title = {"Além das Quadras: O Legado da Família Bad Poli"} />
+        {/* <h1>Além das Quadras: O Legado da Família Bad Poli</h1> */}
 
         <blockquote className="intro-quote">
-          “{"“Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina.”"}”
+          “{"Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina."}”
         </blockquote>
       </section>
 
@@ -27,8 +26,6 @@ const BlogIndexPage = () => {
         <h2>Todas as Histórias</h2>
         {blogData.map(post => (
           <div key={post.id} className="post-link-item">
-            {/* --- THIS IS THE FIX --- */}
-            {/* Change post.slug to post.id */}
             <Link to={`/blog/${post.id}`}>
               <h3>{post.title}</h3>
               <span>{post.date} - por {post.author}</span>

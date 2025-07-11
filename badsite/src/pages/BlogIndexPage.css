@@ -1,5 +1,6 @@
 /* Estilos para a página de índice do blog */
 .blog-index-page {
+  height: auto;
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
@@ -8,6 +9,9 @@
 
 .blog-intro {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   /* border-bottom: 1px solid #e0e0e0;
   padding-bottom: 40px;
   margin-bottom: 40px; */

@@ -47,7 +47,7 @@ export const hallOfFameData = [
     introduction: 'Conhecido apenas como Mr. Leidelas, ele quebrou o estereótipo do nerd "certinho". Sua verdadeira identidade é um mistério para muitos, mas seu legado ecoa até hoje em cada treino e na alma do time.',
   },
   {
-    id: 4,  
+    id: 5,  
     name: 'Eduardo Pierini',
     year: '(2023 - 2024)',
     imageUrl: defaultImg, 
