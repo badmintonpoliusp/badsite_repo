@@ -7,7 +7,6 @@ function Footer() {
   const [showContribPopup, setShowContribPopup] = useState(false);
   const popupRef = useRef(null);
 
-  // Handle click outside to close popup
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (popupRef.current && !popupRef.current.contains(event.target)) {
@@ -33,7 +32,7 @@ function Footer() {
             <li>Patrocínios</li>
             <li 
               onClick={() => setShowContribPopup(true)} 
-              style={{cursor: 'pointer'}}
+              style={{ cursor: "url('assets/images/icons/shuttlecock-icon.cur'), pointer" }}
             >
               Contribuições
             </li>
@@ -129,22 +128,15 @@ function Footer() {
               >
                 ×
               </button>
-              <h3>Ajude o BadPoli a crescer!</h3>
+              <h3>Apoie o time universitário de Badminton da Poli</h3>
               <p>
-                O time de Badminton da Poli é mantido por esforços coletivos — toda contribuição faz a diferença! 🏸💛
+                Você pode contribuir com qualquer valor via Pix para:
               </p>
               <p>
-                Você pode contribuir com materiais (petecas, grips, raquetes etc.) ou com qualquer valor via Pix.
+                <strong>Chave Pix:</strong> bad.poliusp@gmail.com<br />
               </p>
-              <p>
-                <strong>Chave Pix:</strong> badpoliusp@gmail.com<br />
-                <small>(Essa chave é fictícia, substitua pela real caso tenha)</small>
-              </p>
-              <p>
-                <strong>Tem algo para doar?</strong><br />
-                Fale com a diretoria ou deixe na caixinha de contribuições durante os treinos.
-              </p>
-              <p>Obrigado por fazer parte dessa rede!</p>
+              <p>Todo valor será usado na compra de materiais como petecas, grips e raquetes.
+                 Sua ajuda fortalece o esporte universitário. Obrigado! 🏸🎓</p>
             </div>
           </div>
         )}
