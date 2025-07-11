@@ -1,7 +1,30 @@
+<<<<<<< HEAD
 .title_container{
     color: #0a2342;
     /* height: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+/* Page_title.css */
+
+.title_container {
+  /* Adds vertical spacing (3rem top/bottom) and horizontal padding (1rem left/right) */
+  margin: 1.5rem 1rem;
+  text-align: center; /* Centers the title */
+}
+
+/* Target the h1 inside your specific container */
+.title_container h1 {
+  /*
+   * FLUID FONT SIZE:
+   * - Minimum size: 1.7rem
+   * - Preferred size (scales with screen width): 7vw
+   * - Maximum size: 2.5rem
+  */
+  font-size: clamp(1.7rem, 7vw, 2.5rem);
+  color: #0a2342;
+  line-height: 1.3;
+  font-weight: 600;
+>>>>>>> 020f3de08ed924f1c9400e41a52c986f09856cfb
 }
