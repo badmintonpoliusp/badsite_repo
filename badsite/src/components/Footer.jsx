@@ -2,8 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaEnvelope } from 'react-icons/fa'; 
 import './Footer.css';
-import patrocinioPDF from '../assets/pdf/Patrocinio-BadmintonUSP.pdf';
-
 
 function Footer() {
   const [showContribPopup, setShowContribPopup] = useState(false);
@@ -32,14 +30,20 @@ function Footer() {
           <p className="title_bar_footer">Parceria</p>
           <ul>
             <li 
-              onClick={() => setShowContribPopup(true)} 
-              style={{ cursor: "url('assets/images/icons/shuttlecock-icon.cur'), pointer" }}
+              onClick={() => setShowContribPopup(true)}
+              className="shuttlecock-cursor"
             >
               Contribuições
             </li>
-            <li><a target="_blank" 
-                   rel="Patrocínio Badminton Usp"
-                   href={patrocinioPDF}></a>Patrocínios</li>
+            <li>
+              <a 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="/pdf/Patrocinio-BadmintonUSP.pdf"
+              >
+                Patrocínios
+              </a>
+            </li>
             <li>
               <a 
                 target="_blank" 

@@ -44,6 +44,7 @@ p {
     padding: 2% 10%;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 5%;
 }
 
 .block {
@@ -166,4 +167,8 @@ p {
 .popup-content p {
   margin-bottom: 15px;
   line-height: 1.5;
+}
+
+.shuttlecock-cursor {
+  cursor: url('../assets/images/icons/shuttlecock-icon.cur'), pointer;
 }
