@@ -1,7 +1,6 @@
 .gallery-page {
-  padding: 0px;
+  padding-top: 0;
   max-width: 80%;
-  margin-bottom: 5%;
 }
 
 .gallery-container {
@@ -12,4 +11,3 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-

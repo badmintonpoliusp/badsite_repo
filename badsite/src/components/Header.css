@@ -32,6 +32,7 @@
   width: auto;
   margin-right: 15px;
   object-fit: contain;
+  cursor: url('/src/assets/images/icons/shuttlecock-icon.cur'), pointer;
 }
 
 /* Clean hyperlink styling from logo text */
@@ -40,6 +41,7 @@
   font-weight: bold;
   text-decoration: none;
   color: white; /* Explicitly set text color */
+  cursor: url('/src/assets/images/icons/shuttlecock-icon.cur'), pointer;
 }
 
 /* Remove link effects from logo link wrapper */
