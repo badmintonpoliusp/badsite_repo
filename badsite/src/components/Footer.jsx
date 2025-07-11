@@ -152,8 +152,10 @@ function Footer() {
 
       <div id="marco_zero">
         <p id="copyright">
-          Copyright ©2025 Equipe de Badminton da Poli-Usp. Todos os direitos reservados. Desenvolvido pelo{' '}
-          <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>.
+          © 2025 Badminton Poli-USP
+          <br />
+          Desenvolvido por{' '}
+          <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>
         </p>
       </div>
     </>

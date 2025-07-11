@@ -119,3 +119,46 @@
         text-align: justify; 
     }
 } */
+
+/* ALTERNATIVA 2: Estilo Suave e Interativo */
+
+.member-card {
+  /* Layout e Alinhamento */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  /* Espaçamento e Fundo (invisível por padrão) */
+  padding: 20px;
+  background-color: transparent; /* Fundo transparente */
+  border-radius: 15px;
+  box-shadow: none; /* Sem sombra por padrão */
+  
+  /* Animação suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  background-color: #ffffff; /* Fundo aparece no hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Sombra aparece no hover */
+}
+
+.member-photo {
+  /* Tamanho e Formato */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+  /* Espaçamento e Borda (substituindo o anel amarelo por um cinza sutil) */
+  margin-bottom: 15px;
+  border: 3px solid #dadadf; /* Borda cinza bem clara */
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a2342;
+  margin: 0;
+}
