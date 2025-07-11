@@ -1,9 +1,9 @@
 //importar a imagem 
+import defaultImg from '../assets/images/profile/default.png';
 import BrunoImg from '../assets/images/profile/Bruno.png';
 import BranquinhoImg from '../assets/images/profile/Branquinho.png';
 import WilliamImg from '../assets/images/profile/William.png';
-import defaultImg from '../assets/images/profile/default.png';
-
+import pieriniImg from '../assets/images/profile/edu-pierini.jpg';
 
 
 export const hallOfFameData = [
@@ -50,7 +50,7 @@ export const hallOfFameData = [
     id: 5,  
     name: 'Eduardo Pierini',
     year: '(2023 - 2024)',
-    imageUrl: defaultImg, 
+    imageUrl: pieriniImg, 
     title: 'IA de Pinheiros',
     introduction: 'Para alguns, é conhecido como o "pró", para outros, tratava-se de uma mera invenção. Ninguém sabe ao certo se essa figura existia ou não até a recepção dos bixos em 2025.  Os quatrocentos smashes que ele deus nos bixos fez acreditar que realmente há um abismo entre nós, os meros mortais, com os semideuses do badminton. Sua presença é sentida em cada treino, mesmo que ele não esteja lá fisicamente.',
   },
