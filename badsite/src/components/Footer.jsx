@@ -37,10 +37,10 @@ function Footer() {
             >
               Contribuições
             </li>
-            <li>
             <li><a target="_blank" 
                    rel="Patrocínio Badminton Usp"
                    href={patrocinioPDF}></a>Patrocínios</li>
+            <li>
               <a 
                 target="_blank" 
                 rel="noopener noreferrer"
