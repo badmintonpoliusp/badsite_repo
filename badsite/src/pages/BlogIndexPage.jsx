@@ -13,9 +13,7 @@ const BlogIndexPage = () => {
   return (
     <div className="blog-index-page">
       <section className="blog-intro">
-        
         <h1>Além das Quadras: <br></br> O Legado da Família Bad Poli</h1>
-
         <blockquote className="intro-quote">
           “{"Aqui, o badminton vai além do esporte. É união, aprendizado e a construção de uma história que nunca termina."}”
         </blockquote>

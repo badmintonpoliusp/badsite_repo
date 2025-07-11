@@ -14,7 +14,7 @@ function GalleryPage() {
         De treinos intensos 🏸 a pódios emocionantes 🏆, cada foto conta uma parte da nossa história de garra 💪 e paixão pelo esporte. Explore nossos melhores momentos!!! ✨
       </p> */}
       <p className="gallery-description">
-        sçmdsçlm      
+          Confira nossos melhores momentos! Cada foto é parte da nossa história — uma jornada de garra, paixão, superação, inovação e, acima de tudo, união. Navegue por esses sentimentos e viva essa experiência com a gente!
       </p>
 
     </div>
