@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5%;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -34,10 +33,3 @@
   margin-bottom: 0;
 }
 
-.Title-result h3{
-  margin-top: 0;
-  font-size: 2.2em; /* Torna o texto significativamente maior */
-  font-weight: 900; /* Negrito máximo para um impacto visual forte */
-  letter-spacing: 3px; /* Aumenta o espaçamento entre as letras para dar mais "expansão" */
-  color: #f1c40f; 
-}

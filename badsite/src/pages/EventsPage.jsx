@@ -9,12 +9,10 @@ const EventosPage = () => {
     <main className="events-page-container">
       <div className='resultados-container'>
         <div className='Title-result'>
-          <h1>Resultados que ecoam nos gritos da torcida:</h1>
-          <h3>BORA POLI!</h3>
+          <Page_title title="Resultados que vibram com a torcida:" />
         </div>
         <ResultadosPopup />
       </div>
-
       <div className='eventos-container'>
         <Page_title title="Calendário Colaborativo de Eventos" />
         <GoogleCalendar />

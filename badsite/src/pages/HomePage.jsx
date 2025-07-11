@@ -26,9 +26,12 @@ const HomePage = () => {
     </section>
 
     <Post2Display/>
+    <div className='message-container'>
+      <Page_title title={'Comunidade USP: Venha Treinar!'} />
+      <SectionContactInfo/> 
+    </div>
+    
 
-    <Page_title title={'Comunidade USP: Venha Treinar!'} />
-    <SectionContactInfo/> 
     <Supporters/>
     </div>
   );

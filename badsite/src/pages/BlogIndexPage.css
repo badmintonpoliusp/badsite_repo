@@ -1,47 +1,46 @@
-/* Estilos para a página de índice do blog */
 .blog-index-page {
   height: auto;
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blog-intro {
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  /* border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 40px;
-  margin-bottom: 40px; */
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .blog-intro h1 {
-  font-size: 2.8rem;
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
   color: #333;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .intro-quote {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: #777;
   font-style: italic;
-  margin-top: 20px;
-  border: none;
+  margin: 20px auto 0 auto;
   padding: 0;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  border: none;
 }
 
-/* Lista de outros posts */
 .post-list {
   margin-top: 40px;
+  padding: 0 1rem;
 }
 
 .post-list h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   color: #333;
   text-align: center;
   margin-bottom: 30px;
@@ -49,7 +48,7 @@
 
 .post-link-item a {
   display: block;
-  padding: 20px;
+  padding: clamp(16px, 4vw, 20px);
   background-color: #f9f9f9;
   margin-bottom: 15px;
   border-radius: 5px;
@@ -60,16 +59,84 @@
 
 .post-link-item a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .post-link-item h3 {
   margin: 0 0 5px 0;
   color: #0a2342;
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
 }
 
 .post-link-item span {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
   color: #888;
+}
+
+@media (max-width: 768px) {
+  .blog-index-page {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .blog-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro-quote {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .post-list h2 {
+    font-size: 1.6rem;
+  }
+
+  .post-link-item a {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .blog-index-page {
+    padding: 20px 30px;
+  }
+
+  .blog-intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro-quote {
+    font-size: 1.15rem;
+  }
+
+  .post-list h2 {
+    font-size: 1.8rem;
+  }
+
+  .post-link-item a {
+    padding: 18px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .blog-index-page {
+    max-width: 1100px;
+  }
+
+  .blog-intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro-quote {
+    font-size: 1.2rem;
+  }
+
+  .post-list h2 {
+    font-size: 2rem;
+  }
+
+  .post-link-item a {
+    padding: 22px;
+  }
 }

@@ -10,9 +10,13 @@ function GalleryPage() {
       <section className="gallery-section">
         <ImageSlider source="gallery" mode="expanded" />
       </section>
-      <p className="gallery-description">
+      {/* <p className="gallery-description">
         De treinos intensos 🏸 a pódios emocionantes 🏆, cada foto conta uma parte da nossa história de garra 💪 e paixão pelo esporte. Explore nossos melhores momentos!!! ✨
+      </p> */}
+      <p className="gallery-description">
+        sçmdsçlm      
       </p>
+
     </div>
   );
 }

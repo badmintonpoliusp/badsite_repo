@@ -31,9 +31,6 @@ const ResultadosPopup = () => {
       {mostrarPopup && (
         <div className="popup-overlay">
           <div className="popup-content" ref={popupRef}>
-            <button className="fechar-btn" onClick={() => setMostrarPopup(false)}>
-              Fechar
-            </button>
             <table className="tabela-resultados">
               <thead>
                 <tr>

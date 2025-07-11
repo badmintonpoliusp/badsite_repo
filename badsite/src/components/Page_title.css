@@ -1,21 +1,26 @@
-/* Page_title.css */
-
 .title_container {
-  /* Adds vertical spacing (3rem top/bottom) and horizontal padding (1rem left/right) */
-  margin: 1.5rem 1rem;
-  text-align: center; /* Centers the title */
+  margin: auto 1rem;
+  text-align: center;
 }
 
-/* Target the h1 inside your specific container */
 .title_container h1 {
-  /*
-   * FLUID FONT SIZE:
-   * - Minimum size: 1.7rem
-   * - Preferred size (scales with screen width): 7vw
-   * - Maximum size: 2.5rem
-  */
-  font-size: clamp(1.7rem, 7vw, 2.5rem);
   color: #0a2342;
-  line-height: 1.3;
   font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+  
+  font-size: 1.7rem;
+  @media (min-width: 480px) {
+    font-size: min(7vw, 2.5rem);
+  }
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  @media (max-width: 479px) {
+    white-space: normal;
+    display: block;
+    line-height: 1.2;
+  }
 }

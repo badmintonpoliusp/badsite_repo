@@ -150,7 +150,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .slider-container.expanded {
-    max-width: 96%;
+    max-width: 95%;
   }
 
   .slick-arrow {

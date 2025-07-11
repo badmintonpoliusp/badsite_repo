@@ -4,7 +4,7 @@
     flex-wrap: wrap; 
     justify-content: center;
     gap: 30px; 
-    width: 90%;
+    width: 95%;
     max-width: 1200px; 
     margin: 0 auto;
 }
@@ -14,7 +14,7 @@
     flex: 1 1 400px;
     aspect-ratio: 16/9;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -70,8 +70,8 @@
     .section-container {
         /* Em telas pequenas, não precisa de nenhuma regra extra, 
            o flex-wrap: wrap já fará o trabalho de empilhar os itens! */
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 95%;
+        /* padding-left: 15px;
+        padding-right: 15px; */
     }
 }

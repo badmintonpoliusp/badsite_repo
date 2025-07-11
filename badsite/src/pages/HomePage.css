@@ -58,6 +58,10 @@
   transform: translateY(-2px);
 }
 
+.message-container{
+  margin: 4rem auto; /* Use rem for scalable margins */
+}
+
 /* Media query for tablets and smaller devices */
 @media (max-width: 768px) {
   .hero-section {

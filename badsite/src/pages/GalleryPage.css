@@ -12,21 +12,26 @@
 }
 
 .gallery-description {
-  /* Box Model */
-  margin: 2.5rem auto; /* Aumenta o espaço vertical e centraliza */
-  padding: 1rem 1.5rem; /* Espaçamento interno generoso */
-  max-width: 700px;
-  width: 90%; /* Garante que não fique colado nas bordas no mobile */
+  margin: 2.5rem auto 0 auto; 
+  padding: 1rem 1.5rem;
+  max-width: 50%; /* Garante que não fique colado nas bordas no mobile */
+
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid hsl(214, 95%, 20%);
+  border-radius: 8px; 
   
-  /* Estilo do Bloco */
-  background-color: #f8f9fa; /* Um fundo cinza bem claro */
-  border-left: 5px solid #f1c40f; /* Borda de destaque na cor secundária */
-  border-radius: 0 8px 8px 0; /* Cantos arredondados */
-  
-  /* Estilo do Texto */
-  text-align: justify; /* Alinhar à esquerda fica melhor com a borda */
+  text-align: justify; 
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #343a40; /* Cor um pouco mais escura para contraste */
-  font-style: italic; /* O itálico adiciona um toque de personalidade */
+  color: #343a40; 
+  font-style: italic; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-description {
+    max-width: 95%; /* Ajusta a largura no mobile */
+    font-size: 1rem; /* Reduz o tamanho da fonte no mobile */
+  }
 }

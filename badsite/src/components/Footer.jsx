@@ -172,7 +172,6 @@ function Footer() {
           ) : (
             <>
               Copyright © 2025 Equipe de Badminton da Poli-Usp. Todos os direitos reservados.
-              <br />
               Desenvolvido pelo{' '}
               <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>.
             </>
