@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaEnvelope } from 'react-icons/fa'; 
 import './Footer.css';
+import patrocinioPDF from '../assets/pdf/Patrocinio-BadmintonUSP.pdf';
+
 
 function Footer() {
   const [showContribPopup, setShowContribPopup] = useState(false);
@@ -29,7 +31,9 @@ function Footer() {
         <div className="block">
           <p className="title_bar_footer">Parceria</p>
           <ul>
-            <li>Patrocínios</li>
+            <li><a target="_blank" 
+                   rel="Patrocínio Badminton Usp"
+                   href={patrocinioPDF}></a>Patrocínios</li>
             <li 
               onClick={() => setShowContribPopup(true)} 
               style={{ cursor: "url('assets/images/icons/shuttlecock-icon.cur'), pointer" }}
@@ -39,7 +43,7 @@ function Footer() {
             <li>
               <a 
                 target="_blank" 
-                rel="Site da Atlética Poli Usp - Incentivo" 
+                rel="noopener noreferrer"
                 href="https://www.atleticapoliusp.com.br/lei-de-incentivo"
               >
                 Lei de Incentivo
@@ -54,7 +58,7 @@ function Footer() {
             <li>
               <a 
                 target="_blank" 
-                rel="Site da Atlética Poli Usp" 
+                rel="noopener noreferrer"
                 href="https://www.atleticapoliusp.com.br/"
               >
                 A.A.A.P.
@@ -63,7 +67,7 @@ function Footer() {
             <li>
               <a 
                 target="_blank" 
-                rel="Site do CEPEUSP" 
+                rel="noopener noreferrer"
                 href="https://cepe.usp.br/"
               >
                 CEPEUSP
@@ -72,7 +76,7 @@ function Footer() {
             <li>
               <a 
                 target="_blank" 
-                rel="Site da FEBASP" 
+                rel="noopener noreferrer"
                 href="https://www.febasp.org.br/"
               >
                 FEBASP
