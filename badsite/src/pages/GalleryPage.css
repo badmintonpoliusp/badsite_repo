@@ -1,6 +1,5 @@
 .gallery-page {
   padding-top: 0;
-  max-width: 80%;
 }
 
 .gallery-container {
@@ -10,4 +9,24 @@
 .gallery-section {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.gallery-description {
+  /* Box Model */
+  margin: 2.5rem auto; /* Aumenta o espaço vertical e centraliza */
+  padding: 1rem 1.5rem; /* Espaçamento interno generoso */
+  max-width: 700px;
+  width: 90%; /* Garante que não fique colado nas bordas no mobile */
+  
+  /* Estilo do Bloco */
+  background-color: #f8f9fa; /* Um fundo cinza bem claro */
+  border-left: 5px solid #f1c40f; /* Borda de destaque na cor secundária */
+  border-radius: 0 8px 8px 0; /* Cantos arredondados */
+  
+  /* Estilo do Texto */
+  text-align: justify; /* Alinhar à esquerda fica melhor com a borda */
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #343a40; /* Cor um pouco mais escura para contraste */
+  font-style: italic; /* O itálico adiciona um toque de personalidade */
 }
